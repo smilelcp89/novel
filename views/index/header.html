@@ -1,0 +1,24 @@
+{{define "index/header.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{.title}}</title>
+    <style>
+        .tableList{border: 1px solid black; border-collapse: collapse;}
+        .tableList tr{border: 1px solid black;}
+        .tableList tr th, .tableList tr td{border: 1px solid black; padding: 3px; width: 20%; text-align: center;}
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="/admin/index">首页</a></li>
+    <li><a href="/admin/user/index">用户列表</a></li>
+    <li><a href="/admin/novel/index">小说列表</a></li>
+    <li><a href="/admin/novelcategory/index">小说分类</a></li>
+    <li><a href="/admin/novelrank/index">小说排行榜</a></li>
+    <li><a href="/logout">退出</a></li>
+</ul>
+{{end}}

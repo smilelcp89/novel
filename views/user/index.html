@@ -1,0 +1,25 @@
+{{define "user/index.html"}}
+{{template "index/header.html" .}}
+ <h3>用户列表</h3>
+ <p><a href="/admin/user/create">创建用户</a></p>
+<p>
+<form method="get">
+ 账号：<input type="text" name="username" value=""> <input type="submit" value="查询">
+</form>
+</p>
+ <table class="tableList">
+  <tr>
+   <th>No</th>
+   <th>账号</th>
+   <th>积分</th>
+   <th>创建时间</th>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>test</td>
+   <td>10</td>
+   <td></td>
+  </tr>
+ </table>
+{{template "index/footer.html" .}}
+{{end}}

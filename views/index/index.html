@@ -1,0 +1,6 @@
+{{define "index/index.html"}}
+{{template "index/header.html" .}}
+    <p>您好，{{.userName}}</p>
+    <p>后台首页：{{.now}}</p>
+{{template "index/footer.html" .}}
+{{end}}

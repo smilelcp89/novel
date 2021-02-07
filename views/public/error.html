@@ -1,0 +1,18 @@
+{{ define "public/error.html" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发生错误</title>
+</head>
+<body>
+    <h3>错误信息</h3>
+    <p>{{.error}}</p>
+</body>
+<script>
+    setTimeout(function () {
+        window.location.href = '{{.redirectUrl}}';
+    }, 3000);
+</script>
+</html>
+{{ end }}
