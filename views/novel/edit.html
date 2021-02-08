@@ -1,0 +1,26 @@
+{{define "novel/edit.html"}}
+{{template "index/header.html" .}}
+ <h3>添加小说</h3>
+ <form method="post" action="/admin/novel/create">
+  <p>名称：<input type="text" name="title"></p>
+  <p>封面：<input type="file" name="image"></p>
+  <p>章节数：<input type="number" name="chapterSum"></p>
+  <p>
+   发布状态：
+   <select name="publishStatus">
+    <option value="0">未发布</option>
+    <option value="1">已发布</option>
+   </select>
+  </p>
+  <p>
+    连载状态：
+   <select name="status">
+    <option value="0">未开始</option>
+    <option value="1">连载中</option>
+    <option value="2">已完结</option>
+   </select>
+  </p>
+  <p><input type="submit" value="添加"></p>
+ </form>
+{{template "index/footer.html" .}}
+{{end}}
